@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Игорь Симоненко](https://up.htmlacademy.ru/adaptive/10/user/109617).
-* Наставник: `Неизвестно`.
+* Наставник: Артур Мирзоян.
 
 ---
 
