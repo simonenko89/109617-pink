@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        Pink
+      </div>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="/photo.html">Фотографии</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a href="/form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-header__wrapper">
+        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </header>
+    <div class="person-data-form">
+      <div class="person-data-form__wrapper">
+        <p class="person-data-form__preview">Поделитесь своей историей и получите шанс выиграть ценые приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните:</p>
+        <form class="person-data-form__form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="person-data-form__fio">
+            <label>Фамилия:<br>
+            <input type="text" name="last_nm"><br>
+            </label>
+            <label>Имя:<br>
+            <input type="text" name="first_nm"><br>
+            </label>
+            <label>Отчество:<br>
+            <input type="text" name="middle_nm"><br>
+            </label>
+          </div>
+          <div class="person-data-form__achievments">
+            <h3>Ваши безбашенные достижения в путешествии</h3>
+            <label>
+            <input type="checkbox" name="selfy" checked>Сделал селфи с акулой<br>
+            </label>
+            <label>
+            <input type="checkbox" name="taned" checked>Обгорел на пляже<br>
+            </label>
+            <label>
+            <input type="checkbox" name="norris">Видел Чака Норриса<br>
+            </label>
+            <label>
+            <input type="checkbox" name="souvenir">Накупил сувениров<br>
+            </label>
+            <label>
+            <input type="checkbox" name="tower" checked>Удержал башню<br>
+            </label>
+            <label>
+            <input type="checkbox" name="hotel">Разгромил отель<br>
+            </label>
+          </div>
+          <div class="person-data-form__contacts">
+            <label>Номер телефона<br>
+            <input type="text" name="phone_num"><br>
+            </label>
+            <label>Адрес почты<br>
+            <input type="text" name="email_addr"><br>
+            </label>
+          </div>
+          <div class="person-data-form__application">
+            <h3>С каким приложением вы путешествовали?</h3>
+            <label>
+            <input type="radio" name="application" value="ios" checked>Pink для iOS<br>
+            </label>
+            <label>
+            <input type="radio" name="application" value="android">Pink на Android<br>
+            </label>
+            <label>
+            <input type="radio" name="application" value="windows">Windows Phone<br>
+            </label>
+          </div>
+          <div class="person-data-form__emotions">
+            <h3>Опишите свои эмоции</h3>
+            <textarea name="describe_emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </div>
+          <input type="submit" value="Отправить форму">
+          <p>*-обязательные поля</p>
+        </form>
+      </div>
+    </div>
+    <div class="page-footer">
+      <div class="page-footer__logo">
+        <img src="http://placehold.it/150x100">Pink
+      </div>
+      <div class="page-footer__social">
+        <a class="page-footer__social-twitter" href="#"></a>
+        <a class="page-footer__social-facebook" href="#"></a>
+        <a class="page-footer__social-play" href="#"></a>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано<img src="http://placehold.it/150x100">
+      </div>
+    </div>
+  </body>
+</html>
