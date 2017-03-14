@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -25,81 +26,81 @@
       </div>
     </header>
     <div class="person-form">
-      <div class="person-form__wrapper">
-        <p class="person-form__preview">Поделитесь своей историей и получите шанс выиграть ценые приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните:</p>
-        <form class="person-form__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="person-form__fio">
-            <label>Фамилия:<br>
-            <input type="text" name="last_nm" required><br>
-            </label>
-            <label>Имя:<br>
-            <input type="text" name="first_nm" required><br>
-            </label>
-            <label>Отчество:<br>
-            <input type="text" name="middle_nm"><br>
-            </label>
-          </fieldset>
-          <fieldset class="person-form__achievments">
-            <legend>Ваши безбашенные достижения в путешествии</legend>
-            <label>
-            <input type="checkbox" name="selfy" checked>Сделал селфи с акулой<br>
-            </label>
-            <label>
-            <input type="checkbox" name="taned" checked>Обгорел на пляже<br>
-            </label>
-            <label>
-            <input type="checkbox" name="norris">Видел Чака Норриса<br>
-            </label>
-            <label>
-            <input type="checkbox" name="souvenir">Накупил сувениров<br>
-            </label>
-            <label>
-            <input type="checkbox" name="tower" checked>Удержал башню<br>
-            </label>
-            <label>
-            <input type="checkbox" name="hotel">Разгромил отель<br>
-            </label>
-          </fieldset>
-          <fieldset class="person-form__contacts">
-            <label>Номер телефона<br>
-            <input type="text" name="phone_num"><br>
-            </label>
-            <label>Адрес почты<br>
-            <input type="text" name="email_addr" required><br>
-            </label>
-          </fieldset>
-          <fieldset class="person-form__application">
-            <legend>С каким приложением вы путешествовали?</legend>
-            <label>
-            <input type="radio" name="application" value="ios" checked>Pink для iOS<br>
-            </label>
-            <label>
-            <input type="radio" name="application" value="android">Pink на Android<br>
-            </label>
-            <label>
-            <input type="radio" name="application" value="windows">Windows Phone<br>
-            </label>
-          </fieldset>
-          <fieldset class="person-form__emotions">
-            <h3>Опишите свои эмоции</h3>
-            <textarea name="describe_emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </fieldset>
-          <input type="submit" value="Отправить форму">
+      <p class="person-form__preview">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните:</p>
+      <form class="person-form__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="person-form__fio">
+          <label>Фамилия:<br>
+          <input type="text" name="last_nm" required><br>
+          </label>
+          <label>Имя:<br>
+          <input type="text" name="first_nm" required><br>
+          </label>
+          <label>Отчество:<br>
+          <input type="text" name="middle_nm"><br>
+          </label>
+        </fieldset>
+        <fieldset class="person-form__achievments">
+          <h3>Ваши безбашенные достижения в путешествии</h3>
+          <label>
+          <input type="checkbox" name="selfy" checked>Сделал селфи с акулой<br>
+          </label>
+          <label>
+          <input type="checkbox" name="taned" checked>Обгорел на пляже<br>
+          </label>
+          <label>
+          <input type="checkbox" name="norris">Видел Чака Норриса<br>
+          </label>
+          <label>
+          <input type="checkbox" name="souvenir">Накупил сувениров<br>
+          </label>
+          <label>
+          <input type="checkbox" name="tower" checked>Удержал башню<br>
+          </label>
+          <label>
+          <input type="checkbox" name="hotel">Разгромил отель<br>
+          </label>
+        </fieldset>
+        <fieldset class="person-form__contacts">
+          <label>Номер телефона<br>
+          <input type="text" name="phone_num"><br>
+          </label>
+          <label>Адрес почты<br>
+          <input type="text" name="email_addr" required><br>
+          </label>
+        </fieldset>
+        <fieldset class="person-form__application">
+          <h3>С каким приложением вы путешествовали?</h3>
+          <label>
+          <input type="radio" name="application" value="ios" checked>Pink для iOS<br>
+          </label>
+          <label>
+          <input type="radio" name="application" value="android">Pink на Android<br>
+          </label>
+          <label>
+          <input type="radio" name="application" value="windows">Windows Phone<br>
+          </label>
+        </fieldset>
+        <fieldset class="person-form__emotions">
+          <h3>Опишите свои эмоции</h3>
+          <textarea name="describe_emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+        <div class="person-form__submit-block">
+          <input class="person-form__sumbit-btn" type="submit" value="Отправить форму">
           <p><span class="person-form__required">*</span>-обязательные поля</p>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
     <div class="page-footer">
       <div class="page-footer__logo">
-        <img src="http://placehold.it/150x100" alt="googles">Pink
+        <img src="img/logo-pink-blue-mobile.svg" alt="googles">
       </div>
       <ul class="page-footer__social">
-        <li class="page-footer__social-twitter"><a href="#"></a></li>
-        <li class="page-footer__social-facebook"><a href="#"></a></li>
-        <li class="page-footer__social-play"><a href="#"></a></li>
+        <li class="page-footer__social-twitter"><a href="#"><img src="img/icon-twitter.svg" alt="twitter-icon"></a></li>
+        <li class="page-footer__social-facebook"><a href="#"><img src="img/icon-facebook.svg" alt="twitter-icon"></a></li>
+        <li class="page-footer__social-play"><a href="#"><img src="img/icon-youtube.svg" alt="twitter-icon"></a></li>
       </ul>
       <div class="page-footer__copyright">
-        Разработано<a href="https://htmlacademy.ru/"><img src="http://placehold.it/150x100" alt="HTML Academy icon"></a>
+        Разработано<a href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="HTML Academy icon"></a>
       </div>
     </div>
   </body>
