@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header main-picture">
@@ -22,55 +23,46 @@
       </nav>
     </header>
     <div class="load-app">
-      <div class="load-app__wrapper">
-        <a class="load-app__btn btn">Скачать приложение</a>
-        <ul class="load-app__platforms">
-          <li class="load-app__platform-item"><a href="#"><img src="http://placehold.it/150x100" alt="Apple icon"></a></li>
-          <li class="load-app__platform-item"><a href="#"><img src="http://placehold.it/150x100" alt="Android icon"></a></li>
-          <li class="load-app__platform-item"><a href="#"><img src="http://placehold.it/150x100" alt="Windows icon"></a></li>
-        </ul>
-        <p class="load_app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="load-app__load-btn">
+        <a href="#">Скачать приложение</a>
       </div>
+      <ul class="load-app__platforms">
+        <li class="load-app__platform-item"><a href="#"><img src="img/logo-apple.svg" alt="Apple icon"></a></li>
+        <li class="load-app__platform-item"><a href="#"><img src="img/logo-android.svg" alt="Android icon"></a></li>
+        <li class="load-app__platform-item"><a href="#"><img src="img/logo-microsoft.svg" alt="Windows icon"></a></li>
+      </ul>
+      <p class="load_app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
     <section class="advantages">
-      <div class="advantages__wrapper">
-        <div class="advantage__promo">
-          <p>Устали от серости мегаполиса?</p>
-          <p>Нам есть, что вам предложить!</p>
-        </div>
-        <div class="advantages__item">
-          <h2>Поднимает настроение</h2>
-          <p>Приложение позволит победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </div>
-        <div class="advantages__item">
-          <h2>Меняет мир вокруг</h2>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="advantages__item">
-          <h2>Заводит новых друзей</h2>
-          <p>Ставьте лайк, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </div>
+      <div class="advantages__promo">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+      </div>
+      <div class="advantages__item">
+        <h2>Поднимает настроение</h2>
+        <p>Приложение позволит победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <h2>Меняет мир вокруг</h2>
+        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <h2>Заводит новых друзей</h2>
+        <p>Ставьте лайк, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         <div class="advantages__picture">
-          <img src="http://placehold.it/150x100" alt="Phone with an emoji">
+          <img src="img/iphone-screen-mobile@1x.png" alt="Phone with an emoji" width="157" height="320">
         </div>
-        </div>
+      </div>
     </section>
     <section class="comments">
       <div class="comments__wrapper  slider">
-        <input class="slider__input" type="radio" name="comments" id="comments-input-1" checked>
-        <input class="slider__input" type="radio" name="comments" id="comments-input-2">
-        <input class="slider__input" type="radio" name="comments" id="comments-input-3">
         <ul class="comments__list">
           <li class="comments__item comments__item--fast slider__item">
-            <cite class="comments__item-title">Николай Петров</cite>
+            <cite>Николай Петров</cite>
             <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo; 
           </li>
           <li class="comments__item comments__item--fast slider__item">
-            <cite class="comments__item-title">Николай Петров</cite>
+            <cite>Николай Петров</cite>
             <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo; 
           </li>
           <li class="comments__item comments__item--fast slider__item">
-            <cite class="comments__item-title">Николай Петров</cite>
+            <cite>Николай Петров</cite>
             <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo; 
           </li>
         </ul>
@@ -79,12 +71,12 @@
         <label class="slider__toggle" for="comments-input-2">2</label>
         <label class="slider__toggle" for="comments-input-3">3</label>
         </div>
+        <input class="slider__input" type="radio" name="comments" id="comments-input-1" checked>
+        <input class="slider__input" type="radio" name="comments" id="comments-input-2">
+        <input class="slider__input" type="radio" name="comments" id="comments-input-3">
       </div>
     </section>
     <section class="price  slider">
-      <input class="slider__input" type="radio" name="price" id="price-input-1" checked>
-      <input class="slider__input" type="radio" name="price" id="price-input-2">
-      <input class="slider__input" type="radio" name="price" id="price-input-3">
       <ul class="price__list">
         <li class="price__item  price__item--fast  slider__item">
           <img src="http://placehold.it/150x100" alt="standard">
@@ -101,6 +93,9 @@
       <label class="slider__toggle" for="price-input-2">2</label>
       <label class="slider__toggle" for="price-input-3">3</label>
       </div>
+      <input class="slider__input" type="radio" name="price" id="price-input-1">
+      <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
+      <input class="slider__input" type="radio" name="price" id="price-input-3">
     </section>
     <section class="our-contacts">
       <div class="our-contacts__block">
