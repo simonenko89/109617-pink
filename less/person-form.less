@@ -1,24 +1,20 @@
-body {
-  width: 320px;
-  margin: 0 auto;
-  border: 1px solid @grey;
-}
 .person-form {
   background-color: @white;
+  .container();
+  padding: 50px 0;
   &__preview {
     font-family: OpenSans, sans-serif;
     font-size: 14px;
     line-height: 30px;
     text-align: center;
     color: @black;
-    padding: 25px 20px;
+    padding: 0 20px 5px 20px;
     margin: 0;
   }
   &__fio, &__contacts, &__achievments, &__application, &__emotions {
     border: none;
     margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 40px 20px;
   }
   &__fio label, &__contacts label {
     font-family: OpenSans, sans-serif;
@@ -53,7 +49,7 @@ body {
     font-weight: normal;
     color: @pink-text;
     text-transform: uppercase;
-    padding-top: 40px;
+//    padding-top: 40px;
     padding-bottom: 38px;
     margin: 0 auto;
     width: 80%;
@@ -65,15 +61,29 @@ body {
     text-align: left;
     color: @black;
     padding-top: 0;
-    margin-bottom: 40px;
+//    margin-bottom: 40px;
+  }  
+  &__achievments label:last-child, &__application label:last-child {
+    margin-bottom: 0;
   }  
   &__achievments label input, &__application label input {
     margin-bottom: 40px;
-  }  
+  }
   &__emotions textarea {
+    font-family: OpenSans, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: @black;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin-bottom: 45px;
+    border: 2px solid @grey;
+    min-height: 197px;
+    resize: none;
   }
   &__emotions h3 {
     margin-bottom: 14px;
@@ -85,13 +95,27 @@ body {
   &__submit-block {
     padding: 0 20px;
   }
-  &__sibmit-btn {
+  &__submit-btn {
+    font-family: OpenSansBold, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @white;
     width: 100%;
-    box-sizing: content-box;
+    box-sizing: border-box;
     background-color: @green;
     color: @white;
+    padding: 19px 0;
   }
-}
-.person-form p {
-  text-align: center;
+  &__submit-block p {
+    text-align: center;
+    margin-top: 40px;
+    font-family: OpenSansBold, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @black;
+  }
 }
