@@ -1,25 +1,64 @@
 .make-post {
   background-color: @grey;
-  padding: 20px 20px 0 20px;
+  .container();
   &__picture-block {
     border-bottom: 1px solid @grey-border;
-    padding-bottom: 25px;
+    padding: 20px 20px 30px 20px;
   }
-  &__button_block {
-    paddigng-top: 38px;
-    padding-bottom: 41px;
+  &__load-picture {
+    text-align: center;
+  }
+  &__tools {
+    .drop_style();
+    .clearfix();
+    padding-left: 50px;
+    margin-top: 40px;
+  }
+  &__tools li {
+    float: left;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin-right: 30px;
+  }
+  &__tools li:last-child {
+    margin-right: 0;
+    margin-top: 4px;
+  }
+  
+  &__button-block {
+    padding: 38px 20px 41px 20px;
     font-family: OpenSansBold, sans-serif;
     font-size: 18px;
     line-height: 18px;
     text-align: center;
   }
   &__submit-btn {
+    text-align: center;
+    border: 3px solid @pink;
+    border-radius: 34px;
+    padding: 17px 0;
     margin-bottom: 12px;
+  }
+  &__submit-btn a {
+    font-family: OpenSansBold, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
     color: @pink-text;
+    text-decoration: none;
   }
   &__reset-btn {
-    margin-bottom: 12px;
+    text-align: center;
+    border: 3px solid @grey-border;
+    border-radius: 34px;
+    padding: 17px 0;
+  }
+  &__reset-btn a {
+    font-family: OpenSansBold, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
     color: @grey-border;
+    text-decoration: none;
   }
   &__tools li img {
     background-color: @grey-icon;
