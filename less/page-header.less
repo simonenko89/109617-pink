@@ -1,14 +1,36 @@
 .page-header {
-  padding: 20px;
-  background: @dark-blue url(img/bg-back-mobile@1x.jpg) no-repeat;
+  .container();
+  min-height: 220px;
+  position: relative;
+  
   &__logo {
-    font-family: OpenSansBold, sans-serif;
-    font-size: 18px;
+    min-height: 70px;
+    padding-left: 24px;
+    background: @dark-blue;
+    font-family: OpenSans, sans-serif;
+    font-size: 25px;
     line-height: 18px;
     text-transform: uppercase;
     color: @white;
+    border-bottom: 1px solid @black;
   }
-  &__wrapper h1 {
+  &__link {
+    display: inline-block;
+    margin-top: 23px;
+    text-decoration: none;
+    color: @white;
+  }
+  &__promo {
+    padding: 35px 20px 59px 20px;
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 24%;
+    &--main {
+      background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: 50% 100%, 50% -253%;
+      min-height: 368px;
+    }
+  }
+  &__promo h1 {
     font-family: OpenSansLight, sans-serif;
     font-size: 24px;
     line-height: auto;
@@ -16,5 +38,37 @@
     font-weight: normal;
     color: @white;
     margin: 0;
+    padding: 0;
+  }
+}
+.main-nav {
+  &__toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: inherit;
+    color: @white;
+    border: none;
+  }
+  &__list {
+    .drop_style();
+    text-align: center;
+    &--closed {
+      display: none;
+    }
+  }
+  &__item {
+    min-height: 65px;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid @black;
+    text-decoration: none;
+    background: @dark-blue;
+  }
+  &__item a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @white;
+    margin-top: 20px;
   }
 }
